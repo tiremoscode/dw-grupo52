@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&display=swap');
+
+body {
+    background-color: #82bd69;
+}
+
+header {
+    background-color: #9799d3;
+}
+
+main {
+    background-color: pink;
+}
+
+footer {
+    background-color: greenyellow;
+    /* Margin - Margenes */
+    margin: 20px;
+    /* Paddings */
+    padding: 20px;
+}
+
+.textos {
+    font-family: 'Roboto', sans-serif;
+}
+
+.textos2 {
+    font-family: 'Jersey 10', sans-serif;
+}
+
+.color1 {
+    background-color: blue;
+    color: #FFF;
+}
+
+.color2 {
+    background-color: purple;
+    color: #FFF;
+}
+
+.color3 {
+    background-color: orange;
+    color: #000;
+}
+
+.espacio {
+    margin-top: 15px;
+}

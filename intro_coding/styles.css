@@ -1,0 +1,40 @@
+body {
+    background-color: gray;
+}
+
+header {
+    background-color: purple;
+}
+
+main {
+    background-color: yellow;
+}
+
+footer {
+    background-color: red;
+}
+
+.div1 {
+    background-color: blue;
+    color: #FFF;
+}
+
+.div2 {
+    background-color: red;
+}
+
+#p52 {
+    color: yellow;
+}
+
+.div3 {
+    background-image: url('imagenes/gato5.jpg');
+    height: 200px
+}
+
+.gato {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 2px solid green;
+}
