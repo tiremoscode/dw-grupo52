@@ -12,6 +12,8 @@
     Ejemplo: Suma de 2 + 2;
     */
 
+    const interface = require('readline-sync');
+
     let respuesta = "";
 
     do{
