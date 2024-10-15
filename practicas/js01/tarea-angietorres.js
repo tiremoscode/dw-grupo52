@@ -40,8 +40,8 @@
 }
 
 // Ejemplos de uso
-console.log(calculadora(2, 2, 'suma'));           // 4
-console.log(calculadora(10, 5, 'resta'));         // 5
-console.log(calculadora(4, 3, 'multiplicacion')); // 12
+console.log(calculadora(2, -2, 'suma'));           // 0
+console.log(calculadora(10, 15, 'resta'));         // -5
+console.log(calculadora(0.5, 3, 'multiplicacion')); // 1.5
 console.log(calculadora(9, 3, 'división'));       // 3
 console.log(calculadora(10, 0, 'división'));      // Error: No se puede dividir entre 0
