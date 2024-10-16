@@ -1,8 +1,8 @@
-function holaGrupo54s(nombre) {
+function holaGrupo52s(nombre) {
     console.log('Bienvenida ' + nombre);
 }
 
-function holaGrupo54e(nombre) {
+function holaGrupo52e(nombre) {
     console.log('Welcome' + nombre);
 }
 
