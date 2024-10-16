@@ -1,19 +1,19 @@
-/* Instrucciones de la tarea */
-
-/* Calculadora 
-    Suma
-    Resta
-    Multiplicación
-    División 
-    
-    Crear una función que a través de 3 parámetros
-    permita hacer la operación solicitada
-
-    Ejemplo: Suma de 2 + 2;
-    */
-
-function calculadora(valor1, valor2, operacion) {
-    // ToDo
+function calculadora(a, b, operacion) {
+    switch (operacion) {
+        case 'suma':
+            return a + b;
+        case 'resta':
+            return a - b;
+        case 'multiplicacion':
+            return a * b;
+        case 'division':
+            if (b === 0) {
+                return 'Error: División por cero';
+            }
+            return a / b;
+        default:
+            return 'Operación no válida';
+    }
 }
 
-calculadora(2, 2, 'suma');
+calculadora(4, 2, 'suma');
