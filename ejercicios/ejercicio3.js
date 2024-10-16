@@ -12,6 +12,6 @@ function holaGrupo52f(nombre) {
 }
 
 holaGrupo52s('Lizbeth');
-holaGrupo52e('Lizbeth');
-holaGrupo52f('Lizbeth');
+holaGrupo52e('Arantxa');
+holaGrupo52f('Jania');
 
