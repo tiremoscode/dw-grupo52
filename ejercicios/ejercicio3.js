@@ -3,3 +3,8 @@ function holaGrupo54(nombre) {
 }
 
 holaGrupo54('Lizbeth');
+function holaGrupo54(nombre) {
+    console.log('Welcome' + nombre);
+}
+
+holaGrupo54('Lizbeth');
