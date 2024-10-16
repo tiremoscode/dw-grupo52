@@ -13,7 +13,14 @@
     */
 
     function calculadora(valor1, valor2, operacion) {
-        // ToDo
-    }
+        return {
+            suma: valor1 + valor2,
+            resta: valor1 - valor2,
+            multiplicacion: valor1 * valor2,
+            division: valor1 / valor2,}
     
-    calculadora(2, 2, 'suma');
+       
+    
+
+    }
+    console.log( calculadora(3,2));
