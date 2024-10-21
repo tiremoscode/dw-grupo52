@@ -27,16 +27,17 @@ function multiplicar() {
     resultadoMultiplicar.innerHTML = `Resultado: ${multi}`;
 }
 function dividir() {
-    const valor1 = parseInt(document.getElementById('numero1div').value);
-    const valor2 = parseInt(document.getElementById('numero2div').value);
+    const valor1 = parseFloat(document.getElementById('numero1div').value);
+    const valor2 = parseFloat(document.getElementById('numero2div').value);
 
-    const div = valor1 / valor2;
+    if(valor2 !== 0){
+        const div = valor1 / valor2;
 
     const resultadoDividir = document.getElementById('resultadoDiv');
     resultadoDividir.innerHTML = `Resultado: ${div}`;  
-    
-    if(valor1 || valor2 == 0){
-        /*alert(prompt('La división es incorrecta'));*/
+
+    }else{
+        alert(prompt('La división es incorrecta'));
     }
-    resultadoDividir.innerHTML = `Resultado: La división es incorrecta`;
+   
 }
