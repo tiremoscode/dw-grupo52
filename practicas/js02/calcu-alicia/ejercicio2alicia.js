@@ -33,5 +33,10 @@ function dividir() {
     const div = valor1 / valor2;
 
     const resultadoDividir = document.getElementById('resultadoDiv');
-    resultadoDividir.innerHTML = `Resultado: ${div}`;   
+    resultadoDividir.innerHTML = `Resultado: ${div}`;  
+    
+    if(valor1 || valor2 == 0){
+        /*alert(prompt('La división es incorrecta'));*/
+    }
+    resultadoDividir.innerHTML = `Resultado: La división es incorrecta`;
 }
