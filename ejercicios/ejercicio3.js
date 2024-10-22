@@ -26,7 +26,4 @@ holaGrupo52f('Jania');
 
 
 
-
-
-
 holaGrupo52g('Angie');
