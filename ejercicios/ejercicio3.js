@@ -11,7 +11,14 @@ function holaGrupo52f(nombre) {
     console.log('Bienvenue ' + nombre);
 }
 
+function holaGrupo52w(nombre) {
+    console.log('Bem-vindo ' + nombre);
+}
+
+
+
 holaGrupo52s('Lizbeth');
 holaGrupo52e('Arantxa');
 holaGrupo52f('Jania');
+holaGrupo52w('Andrea');
 
