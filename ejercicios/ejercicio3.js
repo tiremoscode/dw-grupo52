@@ -12,7 +12,7 @@ function holaGrupo52f(nombre) {
 }
 
 function holaGrupo52m(nombre){
-    console.log('Konnichiwa ' + nombre);
+    console.log('Willkommmen ' + nombre);
     
 }
 
