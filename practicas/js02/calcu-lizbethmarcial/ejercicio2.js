@@ -1,6 +1,7 @@
 function calcular() {
+    const calcula = document.querySelector('#calcular');
 
-    const operacion = document.querySelector('#calcular').addEventListener('click', () => {
+    calcula.addEventListener('click', () => {
         const valor1 = parseInt(document.getElementById('numero1').value);
         const valor2 = parseInt(document.getElementById('numero2').value);
         const operacion = document.querySelector('#operaciones').value;
