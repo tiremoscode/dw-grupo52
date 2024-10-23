@@ -11,8 +11,13 @@ function holaGrupo52f(nombre) {
     console.log('Bienvenue ' + nombre);
 }
 
-holaGrupo52s('Lizbeth');
-holaGrupo52e('Arantxa');
-holaGrupo52f('Jania');
-holaGrupo52f('Dariela');
+function holaGrupo52I(nombre) {
+    console.log('Benvenuto' + nombre);
+}
+
+holaGrupo52s('1-Lizbeth');
+holaGrupo52e('2-Arantxa');
+holaGrupo52f('3-Jania');
+holaGrupo52f('4-Dariela');
+holaGrupo52I('5-Alicia');
 
