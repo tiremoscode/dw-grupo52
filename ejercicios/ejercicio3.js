@@ -15,10 +15,25 @@ function holaGrupo52w(nombre) {
     console.log('Bem-vindo ' + nombre);
 }
 
+function holaGrupo52g(nombre){
+    console.log('Willkommen ' + nombre);
+}
 
+function holaGrupo52I(nombre) {
+    console.log('Benvenuto' + nombre);
+}
 
-holaGrupo52s('Lizbeth');
-holaGrupo52e('Arantxa');
-holaGrupo52f('Jania');
-holaGrupo52w('Andrea');
+function holaGrupo52j(nombre){
+    console.log('Konnichiwa ' + nombre);
+    
+}
+
+holaGrupo52s('1-Lizbeth');
+holaGrupo52e('2-Arantxa');
+holaGrupo52f('3-Jania');
+holaGrupo52f('4-Dariela');
+holaGrupo52I('5-Alicia');
+holaGrupo52j('6-Lizbeth Marcial');
+holaGrupo52g('6-Lizbeth Marcial');
+holaGrupo52w('7- Andrea Ortiz');
 
