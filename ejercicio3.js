@@ -33,7 +33,7 @@ function holaGrupo52I(nombre) {
 function holaGrupo52j(nombre){
     console.log('Konnichiwa ' + nombre);
 }
-    function holaGrupo52English(nombre){
+    function holaGrupo52English(_nombre){
 holaGrupo52English('Glad to have you here');    
     
 }
