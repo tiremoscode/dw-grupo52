@@ -20,7 +20,7 @@ function holaGrupo52g(nombre){
 }
 
 function holaGrupo52I(nombre) {
-    console.log('Benvenuto' + nombre);
+    console.log('Benvenuto ' + nombre);
 }
 
 function holaGrupo52j(nombre){
