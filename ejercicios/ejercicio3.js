@@ -6,13 +6,17 @@ function holaGrupo52e(nombre) {
     console.log('Welcome' + nombre);
 }
 
-
 function holaGrupo52f(nombre) {
     console.log('Bienvenue ' + nombre);
 }
 function holaGrupo52c(nombre){
     console.log('konnichiwa' + nombre);
 }
+
+function holaGrupo52m(nombre) {
+    console.log('Hello, welcome!' + nombre);
+}
+
 
 function holaGrupo52w(nombre) {
     console.log('Bem-vindo ' + nombre);
@@ -40,3 +44,4 @@ holaGrupo52j('6-Lizbeth Marcial');
 holaGrupo52g('6-Lizbeth Marcial');
 holaGrupo52w('7- Andrea Ortiz');
 holaGrupo52c('8- Claudia Sanchez');
+holaGrupo52m('9- Marisol Cordova');
