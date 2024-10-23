@@ -1,0 +1,29 @@
+<!DOCTYPE html> <!-- Declara el tipo de documento como HTML5. -->
+<html lang="en"><!-- Indica que el contenido del documento está en  inglés. -->
+<head>  <!-- Contiene los metadatos, como el conjunto de caracteres (charset="UTF-8") y la configuración para la correcta visualización en dispositivos móviles (meta name="viewport").  -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>   <!-- Define el título de la página. -->
+</head>
+
+<body> <!--Contiene el contenido visisble de la página-->
+    <div>
+        <h1>Calculadora</h1>   <!-- Título de la página -->
+
+        <div> <!--Agrupa elementos y controla cómo se muestran y manipulan a través de CSS o JavaScript.-->
+            <input type="number" id="numero1" placeholder="Ingresa el número 1">   <!-- Un campo de entrada para el primer número. El atributo type="number" asegura que el usuario solo pueda ingresar números, y el placeholder proporciona un texto sugerido. -->
+            <input type="number" id="numero2" placeholder="Ingresa el número 2">    <!--  Similar al primer campo, pero para el segundo número. -->
+            <button onclick="calcular('sumar');">Sumar</button> <!--Sirve para insertar un boton en este caso uno  para sumar, continere  un evento onclick que llama a la funcion calcular con el parametro sumar-->
+            <button onclick="calcular('restar');">Restar</button>   <!-- Similar al botón anterior, pero para restar -->
+            <button onclick="calcular('multiplicar');">Multiplicar</button>
+            <button onclick="calcular('dividir');">Dividir</button>
+              </div>
+       
+        <div id="resultado">
+            Resultado:
+        </div>
+    </div>
+    <script src="ejercicio2.js"></script>   <!-- Esto incluye el archivo JavaScript externo llamado ejercicio2.js, donde está la lógica de la calculadora. -->
+</body>
+
+</html>
