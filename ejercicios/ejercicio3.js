@@ -41,6 +41,10 @@ function holaGrupo52English(nombre) {
     console.log('Glad to have you here ' + nombre);
 }
 
+function holaGrupo52t(nombre) {
+    console.log('priviet ' + nombre);
+}
+
 holaGrupo52s('1-Lizbeth');
 holaGrupo52e('2-Arantxa');
 holaGrupo52f('3-Jania');
@@ -53,3 +57,4 @@ holaGrupo52c('8- Claudia Sanchez');
 holaGrupo52m('9- Marisol Cordova');
 holaGrupo52English('10- Lilian');
 holaGrupo52p('11-Johana');
+holaGrupo52t(`12- Angie Torres`);
