@@ -5,3 +5,4 @@
 - En la carpeta de prácticas, ingresaremos todas las prácticas del curso.
 - En la carpeta de codigo_sos, se encontrará el código desrrollado durante las sesiones de apoyo.
 - En la carpeta de ejercicios, almacenaremos los ejercicios hechos en clase.
+- Cambios intencionalmente hechos para validar proceso de clonación
