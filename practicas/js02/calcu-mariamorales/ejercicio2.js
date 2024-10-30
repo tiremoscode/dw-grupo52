@@ -1,18 +1,4 @@
-/* Instrucciones de la tarea */
-
-/* Calculadora 
-    Suma
-    Resta
-    Multiplicación
-    División 
-    
-    Crear una función que a través de 3 parámetros
-    permita hacer la operación solicitada
-
-    Ejemplo: Suma de 2 + 2;
-    */
-
-    let x= 6;
+let x= 6;
     let y= 3;
     
     
@@ -31,5 +17,5 @@
     
     suma(x,y);
     resta(x,y);
-    multiplicacion(x,y);
+    multiplicación(x,y);
     division(x,y);
