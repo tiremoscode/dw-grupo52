@@ -30,8 +30,8 @@ do {
 
 const frutas = ['Manzana', 'Plátano', 'Naranja'];
 
-for (const fruta of frutas) {
-    console.log(fruta);
+for (const miFruta of frutas) {
+    console.log(miFruta);
 }
 
 frutas.forEach((fruta) => {
