@@ -35,3 +35,5 @@ const faunamarina4 = {
 }
 
 console.log(faunamarina2);
+
+console.log(faunamarina4);
