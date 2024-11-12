@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RFC - MariaMorales</title>
+</head>
+<body>
+
+    <div class="main">
+        <h1>RFC</h1>
+        <div class="datos-rfc">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" required>
+        </div>
+        <div class="datos-rfc">
+            <label for="apellidoPaterno">Apellido Paterno</label>
+            <input type="text" id="apellidoPaterno" required>
+        </div>
+        <div class="datos-rfc">
+            <label for="apellidoMaterno">Apellido Materno</label>
+            <input type="text" id="apellidoMaterno" required>
+        </div>
+        <div class="datos-rfc">
+            <label for="dia">Día de Nacimiento</label>
+            <input type="number" id="dia" min="1" max="31" required>
+        </div>
+        <div class="datos-rfc">
+            <label for="mes">Mes de Nacimiento</label>
+            <input type="number" id="mes" min="1" max="12" required>
+        </div>
+        <div class="datos-rfc">
+            <label for="año">Año de Nacimiento</label>
+            <input type="number" id="año" min="1" max="99" required>
+        </div>
+        <div class="datos-rfc">
+            <label for="homoclave">Homoclave</label>
+            <input type="text" id="homoclave" value="XXX" disabled>
+        </div>
+        <button onclick="aplicacionRFC()">Generar RFC</button>
+
+        <div class="output" id="rfcOutput" style="display:none;">
+            <strong>Tu RFC es:</strong>
+            <p id="rfcR"></p>
+        </div>
+    </div>
+
+    <script src="rfcmariamorales.js"></script>
+</body>
+</html>
