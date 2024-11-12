@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de RFC</title>
+</head>
+<body>
+    <h2>Generador de RFC</h2>
+    <form id="rfcForm">
+        <label for="nombre">Nombre(s):</label>
+        <input type="text" id="nombre" required><br>
+
+        <label for="apellidoPaterno">Apellido Paterno:</label>
+        <input type="text" id="apellidoPaterno" required><br>
+
+        <label for="apellidoMaterno">Apellido Materno:</label>
+        <input type="text" id="apellidoMaterno" required><br>
+
+        <label for="diaNacimiento">Día de Nacimiento (2 dígitos):</label>
+        <input type="text" id="diaNacimiento" maxlength="2" required><br>
+
+        <label for="mesNacimiento">Mes de Nacimiento (2 dígitos):</label>
+        <input type="text" id="mesNacimiento" maxlength="2" required><br>
+
+        <label for="anoNacimiento">Año de Nacimiento (últimos 2 dígitos):</label>
+        <input type="text" id="anoNacimiento" maxlength="2" required><br>
+
+        <button type="button" onclick="generarRFC()">Generar RFC</button>
+    </form>
+
+    <h3>RFC Generado:</h3>
+    <p id="resultadoRFC"></p>
+
+    <script src="rfcangietorres.js"></script>
+</body>
+</html>
