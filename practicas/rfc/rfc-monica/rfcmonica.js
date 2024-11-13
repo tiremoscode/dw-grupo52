@@ -5,7 +5,7 @@ function generarrfc () {
     var cumpleanios = document.getElementById('cumpleanios').value;
     
     
-    var rfcgenerado = nombre.substring(0, 1) + paterno.substring(0, 2) + materno.substring(0, 1) + cumpleanios.replace(/-/g, '').substring
+    var rfcgenerado = paterno.substring(0, 2) + materno.substring(0, 1) + nombre.substring(0, 1) + cumpleanios.replace(/-/g, '').substring
     (2) + 'XXX' ;
 
     document.getElementById('rfc').textContent = 'RFC generado: ' + rfcgenerado;
