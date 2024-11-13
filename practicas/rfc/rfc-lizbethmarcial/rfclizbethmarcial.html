@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RFC</title>
+    <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin: 20px;
+            font-size: 15px;
+            text-align: center;
+        }
+        .contenedor {
+            background: #C5D6D8;
+            width: 200px;
+            /* height: 500px; */
+            display: inline-block;
+            align-content: center;
+        }
+        h1 {
+            text-align: center;
+        }
+        button {
+            margin: 15px;
+            padding: 5px;
+        }
+        input {
+            margin-top: 7px;
+            margin-bottom: 7px;
+        }
+        .clave{
+             margin: 40px;
+             text-align:left;
+        }
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <h1>RFC</h1>
+        <div class="datos">
+            <label for="">Nombre(s):</label>
+            <br>
+            <input type="text" name="" id="nomCompleto" placeholder="Nombre(s)">
+            <br>
+            <label for="">Apellido paterno:</label>
+            <br>
+            <input type=" text" id="apellidoPat" placeholder="Apellido Paterno">
+            <br>
+            <label for="">Apellido materno:</label>
+            <br>
+            <input type=" text" id="apellidoMat" placeholder="Apellido Materno">
+            <br>
+            <label for="">Fecha de nacimiento:</label>
+            <br>
+            <input type="date" id="fechaNac" placeholder="Fecha nacimiento">
+            <br>
+            <button type="button" onclick="generarRfc()">Generar RFC</button>
+        </div>
+        <div id="vistaRfc" class="clave">
+        </div>
+    </div>    
+
+    <script src="rfc-lizbethmarcial.js"></script>
+</body>
+</html>
