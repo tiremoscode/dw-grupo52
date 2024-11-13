@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>RFC Sin Homoclave</title>
+</head>
+
+<body>
+    <div class="contenedor">
+        <H1>Calcula RFC Sin Homoclave</H1>
+        <p>Nombres:</p>
+        <input type="text" class="cajas1" id="nombre2" placeholder="Nombres" min="2" required>
+        <p>Apellido Paterno:</p>
+        <input type="text" class="cajas1" id="a_paterno" placeholder="Apellido Paterno" min="2" required>
+        <p>Apellido Materno:</p>
+        <input type="text" class="cajas1" id="a_materno" placeholder="Apellido Materno" min="2" required>
+        <p>Dia Nacimiento:</p>
+        <input type="text" class="cajas1" id="bday2" maxlength="02" placeholder="Dia 02" min="01" max="31" required>
+        <p>Mes Nacimiento:</p>
+        <input type="text" class="cajas1" id="mday2" maxlength="02" placeholder="Mes 12" min="01" max="12" step="10" required>
+        <p>Año Nacimiento:</p>
+        <input type="text" class="cajas1" id="yday2" maxlength="2" placeholder="Año 24" min="00" max="99" required>
+        <div id="error"></div>
+        <p id="resultado" class="resultado1"></p>
+        <div class="btn-rfc">
+            <button onclick="crearRfc()">Calcular RFC</button>
+        </div>
+        <script src="claudia.js"></script>
+    </div>
+</body>
+
+</html>
