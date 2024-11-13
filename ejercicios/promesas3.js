@@ -1,7 +1,6 @@
 const obtenerPokemonPromesas = (nombrePokemon) => {
-
     return new Promise((resolve, reject) => {
-        // Simular una solicitu asincrona para obtener datos del pokemón
+        // Simular una solicitud asincrona para obtener datos del pokemón
         const pokemonDatabase = {
             "pikachu": {
                 "nombre": "Pikachu",
@@ -9,12 +8,12 @@ const obtenerPokemonPromesas = (nombrePokemon) => {
                 "habilidad": "Electricidad"
             },
             "bulbasaur": {
-                nombre: "Bulbasaur",
+                "nombre": "Bulbasaur",
                 "tipo": "Planta",
                 "habilidad": "Latigo Cepa"
             },
             "charmander": {
-                nombre: "Charmander",
+                "nombre": "Charmander",
                 "tipo": "Fuego",
                 "habilidad": "Lanza Llamas"
             }
@@ -28,7 +27,6 @@ const obtenerPokemonPromesas = (nombrePokemon) => {
         } else {
             reject('No se encontro el pokemon con nombre ' + nombrePokemon);
         }
-
     });
 
 };
@@ -36,6 +34,7 @@ const obtenerPokemonPromesas = (nombrePokemon) => {
 obtenerPokemonPromesas('pikachu')
     .then((pokemon) => {
         console.log('si lo encontre');
+        console.log(pokemon);
     })
     .catch((error) => {
         console.log('error ', error);
