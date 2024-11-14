@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GeneradorRfC</title>
+</head>
+<body>
+    <H1>Generador de RfC</H1>
+    <form id="formulario">
+       
+        <label for="nombre"> Nombre(s): </label>
+        <input type="text" id="nombre" required><br>
+
+        <label for="apellidoPaterno"> Apellido Paterno: </label>
+        <input type="text" id="apellidoPaterno" required><br>
+
+        <label for="apellidoMaterno"> Apellido Materno: </label>
+        <input type="text" id="apellidoMaterno" required><br>
+        
+        <label for="diaNacimiento"> Día de nacimiento: </label>
+        <input type="number" id="diaNacimiento" maxlength="2" required oninput="formatearDosDigitos(this)"><br>
+        
+        <label for="mesNacimiento"> Mes de nacimiento en digitos: </label>
+        <input type="number" id="mesNacimiento" maxlength="2" required oninput="formatearDosDigitos(this)"><br>
+        
+        <label for="anoNacimiento"> Ultimos dos digitos del año de nacimiento: </label>
+        <input type="number" id="anoNacimiento" maxlength="2" required oninput="formatearDosDigitos(this)"><br>
+
+        <button type="button" onclick="generarRFC()"> Generar RFC </button>
+    </form>
+    
+    <h1>Resultado RFC:</h1>
+    <p id="resultadoRFC"></p>
+    
+    <script src="rfccelesteblas.js"></script>
+
+</body>
+</html>
