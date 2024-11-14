@@ -4,7 +4,8 @@
 
 // En Js una prmesa es un objeto que va a represenar el reultado de una funalización de un código
 // ya sea un valor satisfactorio u on reultado de error.
-// La comunicación a una base de datos. Conectarse a una MySQL, PostgreSQL o SQL Server (VPN - Virtual Private Network)
+// La comunicación a una base de datos. Conectarse a una MySQL, PostgreSQL o SQL Server (VPN - Virtual Private Network) o
+// los de No SQL (MongoDB, DynamoDB).
 // Consumo de Webservices (API).
 
 // Estados.
