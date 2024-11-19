@@ -1,0 +1,28 @@
+/* Sistema de Grid */
+/* Es un modelo de diseño bidimensional*/
+
+/* Propiedades Clave de Grid 
+
+- display: grid. Activa el siustema de diseño de cuadrícula.
+- grid-template-columns. Define las columnas del grid.
+- grid-template-rows. Define las filas del grid.
+- grid-gap. Define el espacio entre las celdas de la cuadrícula.
+*/
+
+.alumnasGrupo52 {
+    display: grid;
+    grid-template-columns: repeat(1, 2fr);
+    /* Tres columnas de igual tamaño */
+    grid-gap: 20px;
+    /* Espacio entre las celdas */
+    height: 100vh;
+    background-color: lightgray;
+}
+
+.alumna {
+    background-color: #4caf50;
+    color: #FFF;
+    text-align: center;
+    height: 100px;
+    line-height: 100px;
+}
