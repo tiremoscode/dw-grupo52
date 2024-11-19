@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <h1>Generador de RFC</h1>
+        <div class="container">
+            <p>
+                <label for="nombre">Nombre:</label>
+               <input type="text" id="nombre" placeholder="nombre">
+            </p>
+            <p>
+                <label for="paterno">Apellido Paterno:</label>
+               <input type="text" id="paterno" placeholder="apellido paterno">
+            </p>
+            <p>
+                <label for="materno">Apellido Materno:</label>
+                <input type="text" id="materno" placeholder="apellido materno">
+            </p>
+            <p>
+                <label for="cumpleanios">Fecha de nacimiento:</label>
+                <input type="date" id="cumpleanios" placeholder="Fecha de nacimiento">
+            </p>
+            
+            <button onclick="generarrfc();">Generar RFC</button>
+        </div>
+        <div id="rfc">
+            Tu RFC es: 
+        </div>
+    </div>
+    <script src="rfcmonica.js"></script> 
+</body>
+
+</html>

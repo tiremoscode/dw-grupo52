@@ -1,0 +1,51 @@
+*{
+   box-sizing: content-box;
+
+}
+body {
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+}
+
+.contenedor {
+    display: flexbox;
+    border: dotted;
+    border-color: rgb(99, 89, 184);
+    background-color: rgba(63, 41, 102, 0.377);
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.btn-rfc{
+    padding: 5em;
+}
+
+h1{
+    padding: 15px;
+    margin: 20%;
+    display: flex;
+    align-items:center;
+    border: 10px;
+    text-align: center;
+    background-color: rgb(99, 89, 184);
+    opacity: 0.7;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(230, 230, 230);
+    font-size: 35px;
+}
+
+.cajas1 {
+    display: flexbox;
+    text-align: center;
+    justify-content: center;
+    }
+
+p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+
+
+}
