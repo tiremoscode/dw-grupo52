@@ -1,3 +1,7 @@
+
+
+
+
 function crearRfc() {
   ///Declarar variables
 var nombre = document.getElementById('nombre2').value.toUpperCase().substring(0,1); //variable que toma la primer letra del nombre
@@ -63,7 +67,3 @@ if (mday.length === 1) mday = '0' + mday;
                             break;
   }
 }
-
-
-
-
