@@ -56,6 +56,7 @@ const obtenerPokemonPromesas = (nombrePokemon) => {
 obtenerPokemonPromesas('pikachu')
     .then((pokemon) => {
         console.log('si lo encontre');
+        console.log(pokemon);
     })
     .catch((error) => {
         console.log('error ', error);
@@ -67,6 +68,7 @@ obtenerPokemonPromesas('pikachu')
 obtenerPokemonPromesas('mewtwo')
     .then((pokemon) => {
         console.log('Si lo encontre');
+        console.log(pokemon);
     })
     .catch((error) => {
         console.log('error ', error);
@@ -77,6 +79,7 @@ obtenerPokemonPromesas('mewtwo')
 obtenerPokemonPromesas('cyndaquil')
     .then((pokemon) => {
         console.log('Si lo encontre');
+        console.log(pokemon);
     })
     .catch((error) => {
         console.log('error ', error);
@@ -87,6 +90,7 @@ obtenerPokemonPromesas('cyndaquil')
 obtenerPokemonPromesas('zubat')
     .then((pokemon) => {
         console.log('Si lo encontre');
+        console.log(pokemon);
     })
     .catch((error) => {
         console.log('error ', error);
@@ -97,6 +101,7 @@ obtenerPokemonPromesas('zubat')
 obtenerPokemonPromesas('gengar')
     .then((pokemon) => {
         console.log('Si lo encontre');
+        console.log(pokemon);
     })
     .catch((error) => {
         console.log('error ', error);
@@ -107,6 +112,7 @@ obtenerPokemonPromesas('gengar')
 obtenerPokemonPromesas('Persian')
     .then((pokemon) => {
         console.log('Si lo encontre');
+        console.log(pokemon);
     })
     .catch((error) => {
         console.log('error ', error);
@@ -117,6 +123,7 @@ obtenerPokemonPromesas('Persian')
 obtenerPokemonPromesas('Mankey')
     .then((pokemon) => {
         console.log('Si lo encontre');
+        console.log(pokemon);
     })
     .catch((error) => {
         console.log('error ', error);
@@ -127,6 +134,7 @@ obtenerPokemonPromesas('Mankey')
 obtenerPokemonPromesas('arcaine')
     .then((pokemon) => {
         console.log('Si lo encontre');
+        console.log(pokemon);
     })
     .catch((error) => {
         console.log('error ', error);
