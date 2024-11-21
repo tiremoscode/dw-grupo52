@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+<header>
+    <img src="imagenes/pokedex2.webp" class="pokedex01">
+</header>
+<body>
+    <div id="cajapadre">
+        <div id="caja1">
+            <input id="pokemon" class="pokemon1" placeholder="Nombre o Numero" value="">
+            <button onclick="obtenerInfoPokemon()" class="btnbuscar">Buscar</button>
+            <button onclick="limpiar()" class="btnlimpiar">limpiar</button>
+            <div class="imagenpokedex">
+                <img src="imagenes/pokedex.png" class="poke">
+
+            </div>
+        </div>
+        <div id="nombrepokemon">
+            <h3 id="resultadoname" class="name"></h3>
+        </div>
+        
+        <div id="imagenes" class="img1"></div>
+        <div id="contenedor" class="contenedor">
+            <div id="resultadoid" class="txtid"></div>
+            <div id="resultadotype" class="txttype"></div>
+            <div id="resultadopeso" class="txtpeso"></div>
+            <div id="resultadoability" class="txtability"></div>
+        </div>
+    </div>
+    <script src="pokedex.js"></script>
+</body>
+
+</html>

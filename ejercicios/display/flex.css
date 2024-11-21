@@ -1,0 +1,34 @@
+/* Flexbox
+trabaja en una sola dimensión
+organiza los elementos dentro de una fila de manera horizontal
+o en una columna de manera vertical.*/
+
+/* Pripiedades clave de Flexbox
+
+display: flex. Activa el modelo de diseño flexible en el contenedor.
+justify-content: Alinea los elementos a lo largo del eje principal. Por default es nuestro eje horizontal.
+align-items. Alinea los elementos a lo largo del eje transversal (por defecto es el eje vertical).
+flex-direction. Establece la dirección del eje principal (Puede ser row, column)
+
+*/
+
+.alumnasGrupo52 {
+    display: flex;
+    justify-content: space-between;
+    /* Distribuye el espacio entre lso diferentes elementos */
+    align-items: center;
+    /* Centrar los elementos de forma vertical */
+    height: 100vh;
+    /* ViewPort Height */
+    flex-direction: row;
+    background-color: lightgray;
+}
+
+.alumna {
+    width: 10vw;
+    height: 10vw;
+    background-color: #4CAF50;
+    color: #FFF;
+    text-align: center;
+    line-height: 100px;
+}

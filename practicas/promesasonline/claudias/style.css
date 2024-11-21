@@ -1,0 +1,133 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+#imagenpokedex{
+    display: flex;
+    flex-direction: column;
+position: absolute;
+align-items: center;
+left: 300px;
+}
+
+
+.pokemon1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 143px;
+    left: 725px;
+    width: 207px;
+    height: 45px;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#cajapadre{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+}
+
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: brown;
+}
+div > img{
+    display: inline-block;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+.img1{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    bottom: 200px;
+    left: 500px;
+}
+
+h3{
+    display: flex;
+    color: aliceblue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: absolute;
+    bottom: 317px;
+    left: 495px;
+    font-size: small;
+}
+
+.txtid{
+    display: inline-block;
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+    position: absolute;
+    color: aliceblue;
+    bottom:285px;
+    left:495px;
+}
+
+.txttype{
+    display: inline-block;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: absolute;
+    color: aliceblue;
+    bottom:340px;
+    left: 743px;
+    font-size: 13px;
+}
+
+.txtpeso{
+    display: inline-block;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: absolute;
+    color: aliceblue;
+    bottom: 315px;
+    left: 743px;
+    font-size: 13px;
+}
+
+.txtability{
+    display: inline-block;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: absolute;
+    color: aliceblue;
+    bottom:293px;
+    left: 743px;
+    font-size: 13px;
+}
+
+.btnbuscar{
+    display: inline-block;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: aliceblue;
+    background-color: #2952b8;
+    width: 80px;
+    height: 35px;
+    position: absolute;
+    left: 745px;
+    bottom: 85px;
+}
+
+.btnlimpiar {
+    display: inline-block;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: aliceblue;
+    background-color: #2952b8;
+    width: 80px;
+    height: 35px;
+    position: absolute;
+    left: 855px;
+    bottom: 85px;
+}
