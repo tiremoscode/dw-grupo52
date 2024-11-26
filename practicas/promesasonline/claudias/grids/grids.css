@@ -1,0 +1,36 @@
+.contenedor{
+display:grid;
+   grid-template-columns: repeat(6, 1fr);
+   grid-template-rows: repeat(1, .5fr);
+  
+}
+
+.contenedor .a{
+   grid-column-start: 2;
+   grid-column-end: 4;
+}
+
+.contenedor2{
+   display:grid;
+   grid-template-columns: repeat(2, 1fr);
+   grid-template-rows: repeat(1, 1fr);
+   background-color: #084035;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.contenedor2 img{
+   width: 60%;
+}
+
+.contenedor2 .c{
+   background-color: #084035;
+   align-items: center;
+   justify-content: center;
+margin: 10%;
+padding: 10px;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+font-size: large;
+text-transform: capitalize;
+text-align: start;
+border-left: 4px solid #D30A3F;
+}
