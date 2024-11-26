@@ -1,0 +1,82 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1;
+    min-height: 100vh;
+    background-size: cover; /* Cubrir todo el fondo */
+    background-position: center; /* Centrar la imagen */
+    background-attachment: fixed; /* Mantener la imagen fija */
+    color: rgb(59, 39, 131); /* Texto blanco para contraste */
+    display: grid;
+    place-items: center; /* Centrar contenido en el viewport */
+    padding: 20px;
+}
+
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 18px;
+       letter-spacing: 2px;
+}
+
+p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+img {
+    max-width: 100%; /* Escalar la imagen */
+    height: auto;
+    border-radius: 10px; /* Bordes redondeados */
+    margin-top: 20px;
+}
+
+#resultado {
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco con transparencia */
+    border: 2px solid #007BFF; /* Borde azul */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para profundidad */
+    padding: 20px; /* Espacio interno */
+    max-width: 500px; /* Ancho máximo */
+    margin: 20px auto; /* Centrar y agregar espacio externo */
+    text-align: center; /* Centrar el texto */
+    font-family: Arial, sans-serif; /* Fuente legible */
+    color: #333; /* Color del texto */
+}
+
+
+/* Responsividad */
+@media (max-width: 768px) {
+    h2 {
+        font-size: 1.5rem;
+    }
+    p {
+        font-size: 0.9rem;
+    }
+    .container {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    h2 {
+        font-size: 1.2rem;
+    }
+    p {
+        font-size: 0.8rem;
+    }
+}
