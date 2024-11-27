@@ -1,13 +1,21 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+.cajapadre{
+    display: grid;
+    /* 1 columna para la barra lateral, 3 columnas para el contenido */
+    grid-template-columns: 1fr 3fr;
+    /* Filas: Header, Contenido Prinicpal y otra para el footer */
+    grid-template-rows: auto 1fr auto;
+    /* Grid Template Areas */
+    grid-template-areas:
+        "header header"
+        "body body"
+        "footer footer"
 }
-
 header{
-    position: relative;
     display: flex;
-    justify-content: center;
+    grid-area: header;
+    text-align: center;
+    background-color: #aaaa;
+    padding: 20%;
 }
 #imagenpokedex{
     display: flex;
@@ -20,7 +28,7 @@ left: 300px;
 
 .pokemon1{
     display: flex;
-    flex-direction: row;
+    grid-area: header;
     justify-content: center;
     align-items: center;
     position: absolute;
@@ -31,13 +39,7 @@ left: 300px;
     font-size: 15px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-#cajapadre{
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 5px;
-}
+
 
 body{
     font-family: Georgia, 'Times New Roman', Times, serif;

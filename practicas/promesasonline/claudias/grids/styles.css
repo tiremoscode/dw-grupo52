@@ -1,0 +1,76 @@
+.header{
+    width: 100%;
+   display: flex;
+    justify-content: center;
+}
+
+.contenedor{
+width: 90%;
+max-width: 100%;
+margin: auto;
+font-size: 10px;
+line-height: 50px;
+text-align: center;  
+box-shadow: 2px 2px 10px rgb(0, 0, 0, .25 );
+}
+
+.contenedor > div {
+    display: block;
+    margin: 5px;
+    color: white;
+}
+
+.contenedor2{
+width: 90%;
+height: auto;
+max-width: 100%;
+margin: auto;
+font-size: 15px;
+text-align: center;  
+box-shadow: 2px 2px 10px rgb(0, 0, 0, .25 );
+}
+
+.contenedor2 > div {
+    display: block;
+    margin: 5px;
+    color: rgb(255, 255, 255);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    background-color:#D30A3F;
+}
+.boton{
+    border: 2px solid #000;
+    border-radius: 5px;
+    font-size: 1rem;
+   font-style: italic;
+    color: white;
+    background-color: #4444;
+  box-shadow: -3px 2px 0 #222, -2px 2px 0 #000;
+}
+
+.name{
+    color: rgba(255, 208, 0, 0.759);
+    font-size: x-large;
+    font-style: oblique;
+    text-shadow: -3px 2px 0 #101712, -2px 2px 0 #9e4545;
+    margin-top: 10%;
+    }
+.id{
+    color: red;
+    font-size: x-large;
+    font-style: oblique;
+}
+.texto{
+    color:#54a46c;
+    font-size: large;
+    margin: 30px;
+    
+}
+
+@media screen and (max-width: 800px) {
+.input1{
+    width: 80%;
+}
+}

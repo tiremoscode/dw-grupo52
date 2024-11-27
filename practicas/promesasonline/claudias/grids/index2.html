@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="grids.css">
+</head>
+
+<body>
+    <div class="header"><img src="img/nombrepokedex.webp">
+    </div>
+    <div class="contenedor">
+        <div class="a"><input type="text" class="input1" id="pokemon" placeholder="Nombre o Numero"></div>
+        
+        <button onclick="obtenerInfoPokemon()" class="boton">Buscar</button>
+            <button onclick="limpiar()" class="boton">Limpiar</button>
+        </div>
+    </div>
+    <div class="contenedor2">
+        <div class="d">
+            <div id="resultadoname" class="name"></div>
+            <div id="imagenes"></div>
+            <p id="resultadoid" class="id"></p>
+        </div>
+        <div class="c">
+            <div id="resultadotype" class="texto"></div>
+            <div id="resultadopeso" class="texto"></div>
+            <div id="resultadoability" class="texto"></div>
+        </div>
+
+    </div>
+    </div>
+
+
+
+    <script src="grillas.js"></script>
+</body>
+
+</html>
