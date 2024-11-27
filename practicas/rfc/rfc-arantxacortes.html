@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de RFC</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .form-group {
+            margin-bottom: 10px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input {
+            padding: 5px;
+            width: 300px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .output {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Generador de RFC</h1>
+    <form id="rfcForm">
+        <div class="form-group">
+            <label for="nombre">Nombre(s):</label>
+            <input type="text" id="nombre" required>
+        </div>
+        <div class="form-group">
+            <label for="apellidoPaterno">Apellido Paterno:</label>
+            <input type="text" id="apellidoPaterno" required>
+        </div>
+        <div class="form-group">
+            <label for="apellidoMaterno">Apellido Materno:</label>
+            <input type="text" id="apellidoMaterno" required>
+        </div>
+        <div class="form-group">
+            <label for="dia">Día de Nacimiento (2 dígitos):</label>
+            <input type="number" id="dia" min="1" max="31" required>
+        </div>
+        <div class="form-group">
+            <label for="mes">Mes de Nacimiento (2 dígitos):</label>
+            <input type="number" id="mes" min="1" max="12" required>
+        </div>
+        <div class="form-group">
+            <label for="anio">Año de Nacimiento (2 dígitos):</label>
+            <input type="number" id="anio" min="0" max="99" required>
+        </div>
+        <button type="button" onclick="generarRFC()">Generar RFC</button>
+    </form>
+    <div class="output" id="resultado"></div>
+
+    <script>
+        function generarRFC() {
+            // Obtener valores de los campos
+            const nombre = document.getElementById("nombre").value.trim().toUpperCase();
+            const apellidoPaterno = document.getElementById("apellidoPaterno").value.trim().toUpperCase();
+            const apellidoMaterno = document.getElementById("apellidoMaterno").value.trim().toUpperCase();
+            const dia = document.getElementById("dia").value.padStart(2, '0');
+            const mes = document.getElementById("mes").value.padStart(2, '0');
+            const anio = document.getElementById("anio").value.padStart(2, '0');
+
+            // Validaciones mínimas
+            if (!apellidoPaterno || !apellidoMaterno || !nombre || !dia || !mes || !anio) {
+                document.getElementById("resultado").textContent = "Por favor, completa todos los campos.";
+                return;
+            }
+
+            // Regla a) Tomar las dos primeras letras del apellido paterno
+            const vocales = ["A", "E", "I", "O", "U"];
+            let primeraLetraPaterno = apellidoPaterno.charAt(0);
+            let primeraVocalPaterno = apellidoPaterno.slice(1).split("").find(letra => vocales.includes(letra)) || "";
+
+            // Regla b) Primera letra del apellido materno
+            let primeraLetraMaterno = apellidoMaterno.charAt(0);
+
+            // Regla c) Primera letra del nombre
+            let primeraLetraNombre = nombre.charAt(0);
+
+            // Generar RFC
+            const rfc = `${primeraLetraPaterno}${primeraVocalPaterno}${primeraLetraMaterno}${primeraLetraNombre}${anio}${mes}${dia}XXX`;
+
+            // Mostrar resultado
+            document.getElementById("resultado").textContent = `RFC Generado: ${rfc}`;
+        }
+    </script>
+</body>
+</html>
