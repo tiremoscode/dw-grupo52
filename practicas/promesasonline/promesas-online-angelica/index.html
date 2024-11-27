@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One Piece API</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Bienvenido</h1>
+        <h2>Consulta personajes de One Piece</h2>
+    
+        <p>Busca a tu personaje favorito de One Piece usando la API.</p>
+    <form id="formApi">
+        <label for="nombre">Nombre del personaje:</label>
+        <input type="text" id="nombre" placeholder="Ejemplo: luffy" required />
+        <button type="submit">Buscar</button>
+    </form>
+    <div  class="col-md-10 d-flex row">
+        <div class="bg-white "> 
+            <img src="./imagenes/suuny.jpg" alt="impresora3d" width="350px">
+        </div>
+        
+    </div>
+    
+    <div id="resultado" class=" col-4 justify-content-end d-flex"></div>
+
+
+    <script src="promesa-onepiece.js"></script>
+</body>
+</html>
