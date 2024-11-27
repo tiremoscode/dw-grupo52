@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promesas Online</title>
+</head>
+<style>
+    body {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin: 20px;
+        font-size: 15px;
+        text-align: center;
+    }
+    .contenedor {
+        background: #8DA9C4;
+        width: 400px;
+        height: 500px;
+        display: inline-block;
+        align-content:flex-start;
+    }
+    h1 {
+        text-align: center;
+    }
+    button {
+        margin: 15px;
+        padding: 5px;
+    }
+    input {
+        margin-top: 7px;
+        margin-bottom: 7px;
+    }
+    .clave{
+         margin: 40px;
+         text-align:left;
+    }
+</style>
+<body>
+    <div class="contenedor">
+        <h1>Promesas Online Pokemon</h1>
+        <form id="formularioApi" >
+            <label for="">Nombre Pokemon:</label>
+            <br>
+            <input type="text" name="" id="datosPokemon" placeholder="Ingrese Pokemon">
+            <button type="button" onclick="obtenerInfoPokemon()">Buscar Pokemon</button>
+            <p>¿Quién es ese pokemon?</p>
+        </form>
+
+        <div id="resultadoPokemon">
+            <!-- <img id="imagenPokemon">
+            <div id="nombresPokemon"></div>
+            <div id="habilidadPokemon" ></div>
+            <div id="otrosDatosPokemon"></div> -->
+
+        </div>
+    </div>
+    <script src="promesasonline-lizbethmarcial.js"></script>
+</body>
+</html>
