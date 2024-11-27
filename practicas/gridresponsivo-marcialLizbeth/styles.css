@@ -1,0 +1,33 @@
+:root {
+    --color-cafe:  rgb(80, 75, 69);
+    --color-verde: #4CAF50;
+    --color-blanco: #FFF;
+    --color-morado: #F4F4;
+}
+
+
+.contenedor {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: 
+    "header header"
+    "main main"
+    "footer footer";
+    gap: 20px;
+    height: 100vh;
+}
+header {
+    grid-area: header;
+    background-color: var(--color-cafe);
+    padding: 15px;
+    position: fixed;
+    z-index: 100;
+}
+main {
+    background-color: var(--color-morado);
+}
+
+footer {
+    background-color: var(--color-verde);
+}
