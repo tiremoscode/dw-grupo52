@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Pokemon</title>
+</head>
+<body>
+    <div>
+        <img src="imagenes/pokemonlogo.png" alt="logo de pokemon" class="imagen">
+        <form id="formulario" class="buscador"> 
+            <label for="parametro">Nombre o ID del Pokémon:</label> 
+            <input type="text" id="parametro" name="parametro">       
+            <button type="submit">Buscar</button>
+        </form> 
+    </div>
+
+    <div id="resultado"></div>
+    <script src="promesas.js"></script>
+</body>
+</html>
