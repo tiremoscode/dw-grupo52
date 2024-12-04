@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promesas Online</title>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Comfortaa:wght@300..700&family=Indie+Flower&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Moderustic:wght@300..800&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Nerko+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<style>
+    body {
+        font-family: "Rubik", sans-serif;
+        margin: 15px;
+        font-size: 15px;
+        text-align: center;
+    }
+    .contenedor {
+        background-image: url(meme-pikachu.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 600px;
+        display: inline-block;
+        align-content:flex-start;
+    }
+    label {
+        font-size: 18px;
+        color: #fff;
+    }
+    h1 {
+        text-align: center;
+        color: #fff;
+    }
+    p{
+        font-size: 20px;
+        font-weight: 700;
+    }
+    button {
+        margin: 15px;
+        padding: 5px;
+    }
+    input {
+        margin-top: 7px;
+        margin-bottom: 7px;
+    }
+    .clave{
+         margin: 25px;
+         text-align:left;
+    }
+</style>
+<body>
+    <div class="contenedor">
+        <h1>Promesas Online Pokemon</h1>
+        <form id="formularioApi" >
+            <label for="">Nombre Pokemon:</label>
+            <br>
+            <input type="text" name="" id="datosPokemon" placeholder="Ingrese Pokemon">
+            <button type="button" onclick="obtenerInfoPokemon()">Buscar Pokemon</button>
+            <p>¿Quién es ese pokemon?</p>
+        </form>
+
+        <div id="resultadoPokemon">
+        </div>
+    </div>
+    <script src="promesasonline-lizbethmarcial.js"></script>
+</body>
+</html>
