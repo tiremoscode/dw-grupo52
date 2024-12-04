@@ -1,0 +1,82 @@
+:root {
+    --color-verde: #fba401;
+    --color-blanco: #FFF;
+    --color-azulMarino: #018dfb;
+    --color-rojo: hsl(0, 77%, 80%);
+    --color-morado: rgba(104, 2, 247, 0.631);
+    --color-negro: #000;
+}
+
+.contenedor {
+    display: grid;
+    /* 1 columna para la barra lateral, 3 columnas para el contenido */
+    grid-template-columns: 0fr 1fr;
+    /* Filas: Header, Contenido Prinicpal y otra para el footer */
+    grid-template-rows: auto 1fr auto;
+    /* Grid Template Areas */
+    grid-template-areas:
+        "header header"
+        "main content"
+        "footer footer"
+    ;
+    gap: 20px;
+    /* Espacio entre los elementos del grid */
+    height: 100vh;
+}
+
+header {
+    grid-area: header;
+    background-color: var(--color-verde);
+    color: var(--color-blanco);
+    padding: 20px;
+    text-align: center;
+}
+
+/* BArra lateral */
+
+/*aside {
+    grid-area: sidebar;
+    background-color: var(--color-azulMarino);
+    color: var(--color-negro);
+    padding: 20px;
+}*/
+
+main {
+    grid-area: content;
+    background-color: var(--color-rojo);
+    padding: 20px;
+   
+    
+}
+
+.buscador{
+    width: 350px;
+    height: 20px;
+    
+}
+
+.btnBusca {
+    width: 250px;
+    height: 20px;
+    
+}
+
+
+
+footer {
+    background-color: var(--color-morado);
+    color: var(--color-blanco);
+    font-weight: bold;
+    font-size: 30px;
+    grid-area: footer;
+    text-align: center;
+    padding: 20px;
+}
+
+.contenido {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+}
